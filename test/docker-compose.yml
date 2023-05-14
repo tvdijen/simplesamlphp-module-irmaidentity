@@ -2,7 +2,9 @@
 version: "3"
 services:
   identityprovider:
-    image: silintl/ssp-base  # https://hub.docker.com/r/silintl/ssp-base
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - 8080:80
     env_file:
