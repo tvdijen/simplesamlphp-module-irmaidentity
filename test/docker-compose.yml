@@ -1,0 +1,13 @@
+---
+version: "3"
+services:
+  identityprovider:
+    image: silintl/ssp-base  # https://hub.docker.com/r/silintl/ssp-base
+    ports:
+      - 8080:80
+    env_file:
+      - ./resources/local.env
+    volumes:
+      - ./resources/favicon-32x32.png:/data/vendor/simplesamlphp/simplesamlphp/www/favicon.png
+      - ./resources/cert:/data/vendor/simplesamlphp/simplesamlphp/cert
+      - ./resources/config:/data/vendor/simplesamlphp/simplesamlphp/config
