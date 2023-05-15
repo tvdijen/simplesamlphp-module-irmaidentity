@@ -1,2 +1,14 @@
 {
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/GTP95/irma-requestor"
+    }
+  ],
+  "require": {
+    "irma/requestor": "dev-master"
+  },
+  "extra": {
+    "ssp-mixedcase-module-name": "simplesamlphp-module-irmaidentity"
+  }
 }
